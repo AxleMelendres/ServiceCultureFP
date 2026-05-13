@@ -28,11 +28,27 @@
     <?php endforeach; ?>
   </div>
 
-  <div class="mt-10 p-6 bg-gradient-to-r from-red-600 to-blue-900 text-white rounded-2xl text-center">
-    <h2 class="text-2xl font-bold">How to run locally</h2>
-    <p class="mt-2 text-sm">Place the <code class="bg-white/20 px-2 py-1 rounded">service-culture-website</code> folder inside <code class="bg-white/20 px-2 py-1 rounded">XAMPP/htdocs</code>, start Apache, then visit:</p>
-    <p class="mt-3 font-mono bg-white/15 inline-block px-4 py-2 rounded">http://localhost/service-culture-website</p>
+  <h2 class="text-3xl font-bold mt-12 mb-6 text-center"><i class="fa-solid fa-users text-red-600"></i> Our Team</h2>
+  <div class="grid md:grid-cols-5 gap-6 mt-8">
+    <?php $team = [
+      'Aira',
+      'Axle Melendres',
+      'Ehrin John Galang',
+      'Erll Jhanwin Catapang',
+      'Jamma Moira Rodriguez',
+      'Jhon Irvin Alido',
+      'Neil Justine Tan',
+      'Paul Lemuel Benedicto',
+      'Paul Lourence',
+      'Raiza Mae Austria'
+    ]; for($i=0; $i<count($team); $i++): $name = $team[$i]; ?>
+      <div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow card-hover text-center">
+        <img src="assets/img/cat <?=$i+1?>.jpg" alt="<?=$name?>" class="w-20 h-20 rounded-full mx-auto mb-3 object-cover border-2 border-gray-200 dark:border-gray-600">
+        <h3 class="font-bold text-sm"><?=$name?></h3>
+      </div>
+    <?php endfor; ?>
   </div>
+
 </section>
 <?php include 'components/footer.php'; ?>
 <script src="assets/js/main.js"></script>
