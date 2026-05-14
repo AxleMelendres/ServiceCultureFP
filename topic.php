@@ -20,7 +20,7 @@ function highlightTerms($text,$termsMap){
 <title>Module <?=$id?>: <?=$t['title']?> — Service Culture Hub</title>
 <meta name="description" content="<?=htmlspecialchars($t['intro'])?>">
 <script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={darkMode:'class'}</script>
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=20260514">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -217,5 +217,5 @@ function highlightTerms($text,$termsMap){
 
 <?php include 'components/footer.php'; ?>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script><script>AOS.init({duration:600,once:true})</script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js?v=20260514"></script>
 </body></html>

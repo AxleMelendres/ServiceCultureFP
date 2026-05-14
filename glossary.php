@@ -7,7 +7,7 @@ $letters=[]; foreach($all as $a){ $l=strtoupper($a['term'][0]); $letters[$l][]=$
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Glossary — Service Culture Hub</title>
 <script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={darkMode:'class'}</script>
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=20260514">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head><body class="bg-gray-50 dark:bg-slate-900 text-gray-900 dark:text-gray-100">
@@ -41,5 +41,5 @@ $letters=[]; foreach($all as $a){ $l=strtoupper($a['term'][0]); $letters[$l][]=$
 <script>
 function filterGloss(q){q=q.toLowerCase();document.querySelectorAll('[data-term]').forEach(el=>{el.style.display=el.dataset.term.includes(q)?'':'none'})}
 </script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js?v=20260514"></script>
 </body></html>
