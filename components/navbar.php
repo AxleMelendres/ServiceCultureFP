@@ -1,5 +1,6 @@
 <?php
 $current = basename($_SERVER['PHP_SELF']);
+$feedbackUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScJBpH2yXkPok1t6Z2WfVGq5VwkNqNOmIgt5ms0V00dteVHjA/viewform?usp=publish-editor';
 function navlink($href,$label,$current){
   $active = (basename($href) === $current) ? 'text-red-600 dark:text-red-400 font-semibold' : 'text-gray-700 dark:text-gray-200';
   echo "<a href=\"$href\" class=\"$active hover:text-red-600 dark:hover:text-red-400 transition\">$label</a>";
@@ -18,6 +19,9 @@ function navlink($href,$label,$current){
       <?php navlink('gallery.php','Gallery',$current); ?>
       <?php navlink('glossary.php','Glossary',$current); ?>
       <?php navlink('about.php','About',$current); ?>
+      <a href="<?=$feedbackUrl?>" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-red-600 text-white font-semibold hover:bg-red-700 transition">
+        <i class="fa-solid fa-comment-dots"></i> Feedback
+      </a>
       <button onclick="toggleDark()" aria-label="Toggle dark mode" class="w-9 h-9 rounded-full border border-gray-300 dark:border-slate-600 hover:bg-gray-100 dark:hover:bg-slate-800 transition">
         <i class="fa-solid fa-moon dark:hidden"></i><i class="fa-solid fa-sun hidden dark:inline"></i>
       </button>
@@ -31,6 +35,9 @@ function navlink($href,$label,$current){
     <?php navlink('gallery.php','Gallery',$current); ?>
     <?php navlink('glossary.php','Glossary',$current); ?>
     <?php navlink('about.php','About',$current); ?>
+    <a href="<?=$feedbackUrl?>" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-red-600 text-white font-semibold hover:bg-red-700 transition">
+      <i class="fa-solid fa-comment-dots"></i> Feedback
+    </a>
     <button onclick="toggleDark()" class="text-left">Toggle dark mode</button>
   </div>
 </nav>
