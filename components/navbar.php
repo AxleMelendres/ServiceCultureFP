@@ -7,12 +7,12 @@ function navlink($href,$label,$current){
 ?>
 <nav x-data="{open:false}" class="sticky top-0 z-50 backdrop-blur bg-white/80 dark:bg-slate-900/80 border-b border-gray-200 dark:border-slate-700 shadow-sm">
   <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-    <a href="index.php" class="flex items-center gap-2 font-bold text-lg">
+    <a href="dashboard.php" class="flex items-center gap-2 font-bold text-lg">
       <span class="inline-flex w-9 h-9 rounded-lg bg-gradient-to-br from-red-600 to-blue-900 text-white items-center justify-center"><i class="fa-solid fa-graduation-cap"></i></span>
       <span class="text-blue-900 dark:text-white">Service Culture <span class="text-red-600">Hub</span></span>
     </a>
     <div class="hidden md:flex items-center gap-6 text-sm">
-      <?php navlink('index.php','Home',$current); ?>
+      <?php navlink('dashboard.php','Home',$current); ?>
       <?php navlink('topics.php','Topics',$current); ?>
       <?php navlink('quiz.php','Quiz',$current); ?>
       <?php navlink('gallery.php','Gallery',$current); ?>
@@ -25,7 +25,7 @@ function navlink($href,$label,$current){
     <button @click="open=!open" class="md:hidden text-2xl" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
   </div>
   <div x-show="open" x-transition class="md:hidden px-4 pb-4 flex flex-col gap-3 text-sm" style="display:none">
-    <?php navlink('index.php','Home',$current); ?>
+    <?php navlink('dashboard.php','Home',$current); ?>
     <?php navlink('topics.php','Topics',$current); ?>
     <?php navlink('quiz.php','Quiz',$current); ?>
     <?php navlink('gallery.php','Gallery',$current); ?>

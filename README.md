@@ -10,7 +10,7 @@ A mini-LMS for IT-BPM college students covering 11 modules on leadership, motiva
 
 ## Pages
 
-- `index.php` — Home
+- `dashboard.php` — Home dashboard
 - `topics.php` — All 11 modules
 - `topic.php?id=1` ... `?id=11` — Lesson pages
 - `quiz.php` — Overall quiz (22+ questions)
