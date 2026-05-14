@@ -1,4 +1,13 @@
 // Dark mode
+function hideSiteLoader(){
+  const loader=document.getElementById('siteLoader');
+  if(!loader)return;
+  loader.classList.add('hidden');
+  setTimeout(()=>loader.remove(),500);
+}
+window.addEventListener('load',hideSiteLoader);
+setTimeout(hideSiteLoader,2500);
+
 function toggleDark(){
   document.documentElement.classList.toggle('dark');
   localStorage.setItem('scl-dark', document.documentElement.classList.contains('dark'));

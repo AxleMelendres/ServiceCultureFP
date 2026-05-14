@@ -6,6 +6,16 @@ function navlink($href,$label,$current){
   echo "<a href=\"$href\" class=\"$active hover:text-red-600 dark:hover:text-red-400 transition\">$label</a>";
 }
 ?>
+<div id="siteLoader" class="site-loader" role="status" aria-live="polite" aria-label="Loading Service Culture Learning Hub">
+  <div class="text-center px-4">
+    <div class="loader-mark">
+      <div class="loader-ring"></div>
+      <div class="loader-cap"><i class="fa-solid fa-graduation-cap text-3xl"></i></div>
+    </div>
+    <div class="font-bold text-lg">Service Culture Hub</div>
+    <div class="loader-dots mt-3" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+</div>
 <nav x-data="{open:false}" class="sticky top-0 z-50 backdrop-blur bg-white/80 dark:bg-slate-900/80 border-b border-gray-200 dark:border-slate-700 shadow-sm">
   <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
     <a href="dashboard.php" class="flex items-center gap-2 font-bold text-lg">
